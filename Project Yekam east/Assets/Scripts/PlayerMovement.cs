@@ -145,6 +145,7 @@ public class PlayerMovement : MonoBehaviour {
         if (cuenta == 0 && grounded == true)
         {
             gas = true;
+            tiempo = 0; //Para la barrita
         }
     }
     IEnumerator Inmune()
