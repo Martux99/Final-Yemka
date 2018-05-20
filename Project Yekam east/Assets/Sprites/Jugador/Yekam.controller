@@ -85,9 +85,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Touching
     m_EventTreshold: 0
-  - m_ConditionMode: 4
+  - m_ConditionMode: 6
     m_ConditionEvent: Vida
-    m_EventTreshold: 3
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102190354529273482}
   m_Solo: 0
@@ -184,9 +184,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Touching
     m_EventTreshold: 0
-  - m_ConditionMode: 4
+  - m_ConditionMode: 6
     m_ConditionEvent: Vida
-    m_EventTreshold: 5
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102290300089271298}
   m_Solo: 0
@@ -211,9 +211,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: OnFloor
     m_EventTreshold: 0
-  - m_ConditionMode: 4
+  - m_ConditionMode: 6
     m_ConditionEvent: Vida
-    m_EventTreshold: 3
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102547690318717238}
   m_Solo: 0
@@ -382,9 +382,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: OnFloor
     m_EventTreshold: 0
-  - m_ConditionMode: 4
+  - m_ConditionMode: 6
     m_ConditionEvent: Vida
-    m_EventTreshold: 5
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102204753893575966}
   m_Solo: 0
@@ -673,9 +673,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Falling
     m_EventTreshold: 0
-  - m_ConditionMode: 4
+  - m_ConditionMode: 6
     m_ConditionEvent: Vida
-    m_EventTreshold: 5
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102777080864040484}
   m_Solo: 0
@@ -796,9 +796,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Falling
     m_EventTreshold: 0
-  - m_ConditionMode: 4
+  - m_ConditionMode: 6
     m_ConditionEvent: Vida
-    m_EventTreshold: 3
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102557282250317490}
   m_Solo: 0

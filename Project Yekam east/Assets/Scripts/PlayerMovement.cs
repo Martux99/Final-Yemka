@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour {
     public static int vida;
     private void Start()
     {
-        vida = 6;
+        vida = 3;
         if (check == true)
         {
             cube.transform.position = checkpose;
@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         cube.transform.position = checkpose;
         cube.SetActive(true);
-        vida = 6;
+        vida = 3;
         Kodak.transform.position = new Vector3  (0, cube.transform.position.y, Kodak.transform.position.z);
     }
     void FixedUpdate ()
