@@ -15,6 +15,7 @@ public class QPlasma : MonoBehaviour {
     public Vector3 SpaceUpRight;
     public Vector3 Reaparicion;//El lugar donde aparecera la primer copia
     public Vector3 Reaparicion1;// ""la segunda copia
+    public Animator animador;
     void Start()
     {
         tiempoinicio = -Time.time;
@@ -31,6 +32,7 @@ public class QPlasma : MonoBehaviour {
     void Update()
     {
         tiempo = Time.time+tiempoinicio;
+        animador.SetFloat("Tiempo", tiempo);
         if (direction == true)
         {
             plasmaCuantico.transform.Translate(Vector3.right * Time.deltaTime * 1);

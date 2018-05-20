@@ -1040,6 +1040,11 @@ Prefab:
       propertyPath: quanticTime
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114944848532374752, guid: a5e14bd2cb2f0d8469189815464faea7,
+        type: 2}
+      propertyPath: time
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5e14bd2cb2f0d8469189815464faea7, type: 2}
   m_IsPrefabParent: 0
@@ -1684,6 +1689,8 @@ MonoBehaviour:
   whereto: {x: 0, y: 0, z: 0}
   Y_Animation: {fileID: 778980375}
   checkpose: {x: 0, y: 0}
+  yemkita: {fileID: 778980379}
+  inmunidad: 0
   check: 0
   grounded: 0
   direccion: 0
@@ -1717,18 +1724,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.27988103, y: 0.6206762}
-      - {x: 0.13849387, y: 0.762574}
-      - {x: -0.09462666, y: 0.81338835}
-      - {x: -0.24585225, y: 0.75781476}
-      - {x: -0.3693226, y: 0.6642331}
-      - {x: -0.4266379, y: 0.4454668}
-      - {x: -0.41003287, y: 0.2768401}
-      - {x: -0.36047938, y: 0.14738697}
-      - {x: -0.47325408, y: -0.4217942}
-      - {x: 0.46780056, y: -0.42724764}
-      - {x: 0.26744846, y: 0.25225577}
-      - {x: 0.30686727, y: 0.43509778}
+    - - {x: 0.27529222, y: 0.6138129}
+      - {x: -0.01472622, y: 0.8576452}
+      - {x: -0.39451292, y: 0.626407}
+      - {x: -0.36200318, y: 0.18629728}
+      - {x: -0.46015692, y: -0.31323034}
+      - {x: 0.41106907, y: -0.323048}
+      - {x: 0.2932801, y: 0.23047684}
 --- !u!212 &778980379
 SpriteRenderer:
   m_ObjectHideFlags: 0

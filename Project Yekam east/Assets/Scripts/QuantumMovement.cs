@@ -9,6 +9,7 @@ public class QuantumMovement : MonoBehaviour {
     public bool Movimiento = false; //El booleano indica si esta activo el objeto
     public GameObject plasma;// Es el objeto de plasma
     public BoxCollider2D colli; //El colisionador de las copias
+    public Animator animador;
     private void Awake()
     {
         StartCoroutine(GeneracionCuantica());
@@ -17,7 +18,8 @@ public class QuantumMovement : MonoBehaviour {
     IEnumerator GeneracionCuantica()
     {
         yield return new WaitForSeconds(waitTime);
-        Movimiento = true; 
+        Movimiento = true;
+        animador.SetBool("Listo", true);
     }
     void Start ()
     {
@@ -50,6 +52,7 @@ public class QuantumMovement : MonoBehaviour {
             Destroy(plasma);
         } 
     }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Jugador")

@@ -14,7 +14,9 @@ public class PlayerMovement : MonoBehaviour {
     public Animator Y_Animation;
     public Vector2 checkpose;
     public Scene scene;
+    
 
+    public bool inmunidad;
     public bool check;
     bool direccion2=false;
     public bool grounded = false;
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (vida < 1)
         {
+            inmunidad = false;
             cube.SetActive(false);
             Invoke("Reload", 2);
         }
@@ -144,6 +147,12 @@ public class PlayerMovement : MonoBehaviour {
             gas = true;
         }
     }
+    IEnumerator Inmune()
+    {
+        yield return new WaitForSeconds(2f);
+        inmunidad = false;
+        
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
          if (collision.gameObject.tag == "Checkpoint")
@@ -153,8 +162,11 @@ public class PlayerMovement : MonoBehaviour {
             check = true;
             checkpose = new Vector2(player.transform.position.x, player.transform.position.y);
         }
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" && inmunidad==false)
         {
+            inmunidad = true;
+            
+            StartCoroutine(Inmune());
             Destroy(collision.gameObject);
             vida--;
             Y_Animation.SetInteger("Vida", vida);
