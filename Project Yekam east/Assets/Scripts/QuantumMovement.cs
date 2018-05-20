@@ -17,15 +17,14 @@ public class QuantumMovement : MonoBehaviour {
     IEnumerator GeneracionCuantica()
     {
         yield return new WaitForSeconds(waitTime);
-        Movimiento = true;
-        
+        Movimiento = true; 
     }
     void Start ()
     {
-
         brandom = Random.Range(0, 2);
         if (plasma.transform.position.x < -1.5f && brandom == 0)
         {
+            plasma.transform.localScale = new Vector3(plasma.transform.localScale.x * -1, plasma.transform.localScale.y, plasma.transform.localScale.z);
             plasma.transform.position = new Vector3(0, plasma.transform.position.y, 0);
         }
         if (plasma.transform.position.x > 1.5 && brandom == 1)
@@ -49,8 +48,7 @@ public class QuantumMovement : MonoBehaviour {
         if (plasma.transform.position.x < -4 || plasma.transform.position.x > 4)
         {
             Destroy(plasma);
-        }
-        
+        } 
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

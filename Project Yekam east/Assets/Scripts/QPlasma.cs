@@ -21,6 +21,7 @@ public class QPlasma : MonoBehaviour {
         if (plasmaCuantico.transform.position.x > 1)
         {
             direction = false;
+            plasmaCuantico.transform.localScale = new Vector3(plasmaCuantico.transform.localScale.x * -1, plasmaCuantico.transform.localScale.y, plasmaCuantico.transform.localScale.z);
         }
         else
         {

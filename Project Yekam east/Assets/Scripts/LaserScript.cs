@@ -11,6 +11,7 @@ public class LaserScript : MonoBehaviour {
 		if (Plasma.transform.position.x > 1)
         {
             direction = false;
+            Plasma.transform.localScale = new Vector3(Plasma.transform.localScale.x * -1, Plasma.transform.localScale.y, Plasma.transform.localScale.z);
         }
         else
         {
